@@ -14,6 +14,14 @@ def register():
     else:
         return render_template("register.html")
 
+@app.route("/login",methods= ['GET','POST'])
+def login():
+    if request.method == 'POST':
+        user = "HII"
+        return user
+    else:
+        return render_template("login.html")
+
 '''
 @app.route("/log",methods=['GET'])
 def m2():
