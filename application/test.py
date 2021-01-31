@@ -8,11 +8,11 @@ def home():
 
 @app.route("/register",methods = ['POST','GET'])
 def register():
-    if request.method = 'POST':
+    if request.method == 'POST':
         html = "hrllo"
         return html
     else:
-    return render_template("home.html")
+        return render_template("home.html")
 
 '''
 @app.route("/log",methods=['GET'])
