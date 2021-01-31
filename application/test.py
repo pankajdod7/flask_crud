@@ -3,7 +3,15 @@ app = Flask(__name__,template_folder='template')
 
 
 @app.route("/")
-def m1():
+def home():
+    return render_template("home.html")
+
+@app.route("/register",methods = ['POST','GET'])
+def register():
+    if request.method = 'POST':
+        html = "hrllo"
+        return html
+    else:
     return render_template("home.html")
 
 '''
