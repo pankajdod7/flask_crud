@@ -12,7 +12,7 @@ def register():
         html = "hrllo"
         return html
     else:
-        return render_template("home.html")
+        return render_template("register.html")
 
 '''
 @app.route("/log",methods=['GET'])
